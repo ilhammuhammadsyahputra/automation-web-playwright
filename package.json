@@ -1,0 +1,21 @@
+{
+  "name": "automation-web-playwright-cucumber",
+  "version": "1.0.0",
+  "description": "Playwright + Cucumber BDD automation for SauceDemo (https://www.saucedemo.com)",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:login": "cucumber-js --tags @login",
+    "test:cart": "cucumber-js --tags @cart",
+    "test:checkout": "cucumber-js --tags @checkout",
+    "test:logout": "cucumber-js --tags @logout",
+    "test:headed": "HEADLESS=false cucumber-js",
+    "test:report": "cucumber-js && open reports/cucumber-report.html"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.9.0",
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.14.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2"
+  }
+}
