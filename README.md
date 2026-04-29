@@ -109,17 +109,34 @@ All scenarios required by the task are covered:
 - Node.js >= 18
 - npm >= 8
 
-### Install dependencies
+### 1. Clone the repository
+
+```bash
+git clone <repository-url>
+cd automation-web-playwright-cucumber
+```
+
+### 2. Install dependencies
 
 ```bash
 npm install
 ```
 
-### Install Playwright browser
+### 3. Install Playwright and its browser binaries
 
 ```bash
 npx playwright install chromium
 ```
+
+> This downloads the Chromium browser that Playwright controls during test runs. It only needs to be done once after cloning.
+
+### 4. Verify the setup
+
+```bash
+npx playwright --version
+```
+
+You should see a version number printed (e.g., `Version 1.x.x`). If this works, the project is ready to run.
 
 ---
 
